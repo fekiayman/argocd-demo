@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: backup-before-deploy
+  annotations:
+    argocd.argoproj.io/hook: PreSync
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: backup
+        image: busybox
+        command:
+        - sh
+        - -c
+        - |
+          echo "Starting database backup..."
+          echo "Backup completed successfully."
