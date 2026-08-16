@@ -5,3 +5,4 @@ resources:
 - deployment.yaml
 - service.yaml
 - presync-job.yaml
+- service2.yaml
