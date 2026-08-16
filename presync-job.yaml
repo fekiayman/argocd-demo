@@ -15,4 +15,4 @@ spec:
         command:
         - sh
         - -c
-        - echo "Starting database backup..." && echo "Backup completed successfully."
+        - echo "Starting database backup..." && echo "Backup completed successfully.!!"
